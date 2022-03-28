@@ -17,26 +17,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     margin-top: 35px;
   }
   .columns form{
     display:flex;
     flex-direction: column;
   }
+  .main_form {
+    display: flex;
+    flex-direction: column;
+  }
   
   .wrapper {
     display: flex;
+    flex-direction: column;
   }
   .container {
-    max-width: 960px;
     margin-top: 25px;
-    background-color: lime;
+    justify-content: space-around;
+    display: flex;
   }
   .header {
     display:block;
     padding:15px;
     border-radius:4px;
     background-color:hsl(48,100%,67%);
+    margin-top: 25px;
   }
   .page_item{
     display:flex;
@@ -44,6 +51,8 @@
     padding:15px;
     border-radius:4px;
     background-color: #efefef;
+    height: fit-content;
+    margin: 20px;
   
   }
   .form_item{
@@ -53,4 +62,5 @@
     margin:5px;
   
   }
+ 
   
