@@ -28,6 +28,21 @@ function getRandomIntInclusive(min, max) {
           const injectThisItem = `<li>${displayName}</li>`;
           targetList.innerHTML += injectThisItem
       })
+function initMap(targetID){
+//TODO
+//https://leafletjs.com/SlavaUkraini/ - leaflet tutorial
+
+const map =  L.map(targetId).setView([51.505, -0.09], 13);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/titles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    titleSize:512,
+    zoomOffset: -1,
+    accessToken: ''
+})
+}
+    
   }
   // Last step hook up to index.html
   async function mainEvent() { // the async keyword means we can make API requests
